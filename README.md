@@ -24,7 +24,7 @@ Project exercises for javaweb
 12. [background-size属性](#12-background-size属性)
 
 ## 1. 创建HTML模板
-```html5
+```html
 <!DOCTYPE html> 
 <html lang="ZH-CN"> 
   <head>
