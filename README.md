@@ -24,6 +24,7 @@ Project exercises for javaweb
 12. [background-size属性](#12-background-size属性)
 
 ## 1. 创建HTML模板
+```html
 <!DOCTYPE html> 
 <html lang="ZH-CN"> 
 <head>
@@ -48,6 +49,7 @@ Project exercises for javaweb
 <!-- 页面结构写在这里 --> 
 </body>
 </html>
+```html
 ## 2. 通过vw布局适配移动端页面
 ## 3. 正确区分块级元素和内联元素
 ## 4. float后外部容器无法撑开
