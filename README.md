@@ -58,8 +58,11 @@ Project exercises for javaweb
 常见的内联元素：span、imp、input、label、select等。  
 其最明显的区别室块级元素会占一行，而内联元素则不会换行，宽度随内容而定。  
 目前遇到过两个问题：  
-* 多行\<span>对齐，如下图：  
+* 多行\<span>对齐，如下图： 
+
 ![alt](/image/1.png)
+
+由于两行中标题宽度不一致，导致后面的内容无法对齐。为此，我们希望为标题<span>设定一个宽度，但前面说到，内联元素宽度随内容而定，对其设定width是无效的。这里就要用到“display: inline-block”这个属性了。inline-block是CSS2.1新增的值，简单来说就是使其既具有block的宽度高度特性又具有inline的同行特性。我们对标题的CSS做如下设定：
 
 ## 3. 正确区分块级元素和内联元素
 ## 4. float后外部容器无法撑开
