@@ -24,6 +24,7 @@ Project exercises for javaweb
 12. [background-size属性](#12-background-size属性)
 
 ## 1. 创建HTML模板
+
 ```html
 <!DOCTYPE html> 
 <html lang="ZH-CN"> 
@@ -54,6 +55,16 @@ Project exercises for javaweb
 
 ## 2. 通过vw布局适配移动端页面
 
+随着越来越多的浏览器支持了`vw`特性，在设计移动端页面时，推荐使用`vw`作为长度单位，这样可以解决大部分主流终端下的适配问题，而不用花费太多精力去修改页面样式。根据相关的测试，在以下这些地方可以使用`vw`来适配我们的页面：
+容器适配，可以使用`vw`；
+文本的适配，可以使用`vw`；
+大于1px的边框、圆角、阴影都可以使用`vw`；
+内距和外距，可以使用`vw`。
+有关`vw`的详细介绍，可以参考以下这篇文章：
+[再聊移动端页面的适配](https://www.w3cplus.com/css/vw-for-layout.html "再聊移动端页面的适配")
+
+## 3. 正确区分块级元素和内联元素
+
 常见的块级元素：`div`、`p`、`form`、`li`等；  
 常见的内联元素：`span`、`input`、`label`、`select`等。  
 其最明显的区别室块级元素会占一行，而内联元素则不会换行，宽度随内容而定。  
@@ -73,7 +84,6 @@ Project exercises for javaweb
 
 ![alt](/image/2.png)
 
-## 3. 正确区分块级元素和内联元素
 ## 4. float后外部容器无法撑开
 ## 5. H5声明下height设置百分比无效
 ## 6. 禁止点击事件
