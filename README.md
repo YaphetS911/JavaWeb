@@ -51,7 +51,6 @@ Project exercises for javaweb
     </body>
 </html>
 ```
-
 ## 2. 通过vw布局适配移动端页面
 ## 3. 正确区分块级元素和内联元素
 ## 4. float后外部容器无法撑开
