@@ -51,7 +51,15 @@ Project exercises for javaweb
     </body>
 </html>
 ```
+
 ## 2. 通过vw布局适配移动端页面
+
+常见的块级元素：div、p、form、li等；
+常见的内联元素：span、imp、input、label、select等。
+其最明显的区别室块级元素会占一行，而内联元素则不会换行，宽度随内容而定。
+目前遇到过两个问题：
+* 多行\<span>对齐，如下图：
+
 ## 3. 正确区分块级元素和内联元素
 ## 4. float后外部容器无法撑开
 ## 5. H5声明下height设置百分比无效
