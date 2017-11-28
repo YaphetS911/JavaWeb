@@ -59,7 +59,8 @@ Project exercises for javaweb
 * 容器适配，可以使用`vw`；   
 * 文本的适配，可以使用`vw`；  
 * 大于1px的边框、圆角、阴影都可以使用`vw`；  
-* 内距和外距，可以使用`vw`。  
+* 内距和外距，可以使用`vw`。 
+
 有关`vw`的详细介绍，可以参考以下这篇文章：  
 [再聊移动端页面的适配](https://www.w3cplus.com/css/vw-for-layout.html "再聊移动端页面的适配")
 
