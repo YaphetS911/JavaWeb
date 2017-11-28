@@ -22,7 +22,7 @@ Project exercises for javaweb
 10. [\<div>内部元素垂直居中](#10<div>内部元素垂直居中)
 11. [页面底部固定元素](#11.页面底部固定元素)
 12. [background-size属性](#12.background-size属性)
-13. [我我我](#我我我)
+13. [横线](#横线)
 
 #### 1.创建HTML模板
 #### 2.通过vw布局适配移动端页面
@@ -36,4 +36,4 @@ Project exercises for javaweb
 #### 10.\<div>内部元素垂直居中
 #### 11.页面底部固定元素
 #### 12.background-size属性
-#### 我我我 
+#### 横线
