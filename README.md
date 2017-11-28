@@ -49,7 +49,7 @@ Project exercises for javaweb
     <!-- 页面结构写在这里 --> 
   </body>
 </html>
-```html5
+```
 
 ## 2. 通过vw布局适配移动端页面
 ## 3. 正确区分块级元素和内联元素
