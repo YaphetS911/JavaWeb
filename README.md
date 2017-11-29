@@ -198,9 +198,9 @@ $("#btn ").click(function() {
 
 这是由于浏览器在处理非整数值（如20.6666px）时造成的。为了使滚动效果一致，我们可以根据具体情况在滚动距离外添加向上取整、向下取整或四舍五入函数，具体使用方法如下：
 ```JS
-Math.ceil(5.21)    //向上取整，结果为6 
-Math.floor(5.55)    //向下取整 结果为5 
-Math.round(5.78)    //四舍五入 结果为6 
+Math.ceil(5.21)         //向上取整，结果为6 
+Math.floor(5.55)        //向下取整 结果为5 
+Math.round(5.78)        //四舍五入 结果为6 
 ```
 在案例中，对`<button>`点击事件做如下修改，即可去除`<div>`顶部的距离：
 ```JS
@@ -235,7 +235,7 @@ height: 100%;
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -xpx;    //x为底部元素的高度+margin，下同
+    margin: 0 auto -xpx;        //x为底部元素的高度+margin，下同
 }
 .footer {
     height: xpx;
@@ -253,7 +253,7 @@ height: 100%;
         <div class="push"></div>
     </div>
     <div class="footer">
-		<!-- 页面底部内容写在这里 --> 
+        <!-- 页面底部内容写在这里 --> 
     </div>
 </body>
 ```
@@ -264,7 +264,7 @@ height: 100%;
 
 ![alt](/image/8.png)
 
-因此，设置`background-image`属性时，推荐将`background-size`值设为`contain`，即可避免此现象。下图为设置`background-size:contain`后的效果：
+因此，设置`background-image`属性时，推荐将`background-size`值设为`contain`，即可避免此现象。下图为设置`background-size: contain`后的效果：
 
 ![alt](/image/9.png)
 
