@@ -14,7 +14,7 @@ Project exercises for javaweb
 2. [通过vw布局适配移动端页面](#2-通过vw布局适配移动端页面)
 3. [正确区分块级元素和内联元素](#3-正确区分块级元素和内联元素)
 4. [float后外部容器无法撑开](#4-float后外部容器无法撑开)
-5. [H5声明下height设置百分比无效](#5-h5声明下height设置百分比无效)
+5. [H5声明下height设置百分比无效](#5-html5声明下height设置百分比无效)
 6. [禁止点击事件](#6-禁止点击事件)
 7. [n个元素内\<button>点击事件](#7-n个元素内button点击事件)
 8. [jQuery效果函数](#8-jquery效果函数)
@@ -117,7 +117,7 @@ Project exercises for javaweb
 
 ![alt](/image/5.png)
 
-这是因为内部的元素因为使用`float:left`之后，就丢失了`clear:both`的样式，所以外部的容器不会被撑开。  
+这是因为内部的元素因为使用`float: left`之后，就丢失了`clear: both`的样式，所以外部的容器不会被撑开。  
 有两个较好的解决办法：  
 * 对父元素设置`overflow`属性，可以是`overflow:auto`或是`overflow:hidden`；
 * 利用伪元素，直接在父元素的最后增加一个`clear: both`的动作：
