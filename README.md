@@ -119,7 +119,7 @@ Project exercises for javaweb
 
 这是因为内部的元素因为使用`float: left`之后，就丢失了`clear: both`的样式，所以外部的容器不会被撑开。  
 有两个较好的解决办法：  
-* 对父元素设置`overflow`属性，可以是`overflow:auto`或是`overflow:hidden`；
+* 对父元素设置`overflow`属性，可以是`overflow: auto`或是`overflow: hidden`；
 * 利用伪元素，直接在父元素的最后增加一个`clear: both`的动作：
 ```CSS
 .container::after {
