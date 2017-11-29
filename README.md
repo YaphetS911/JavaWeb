@@ -30,32 +30,29 @@ Project exercises for javaweb
 ```HTML
 <!DOCTYPE html> 
 <html lang="ZH-CN">
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,
-	maximum-scale=1,minimum-scale=1,user-scalable=no">
-	<title>****</title> 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<meta name="apple-touch-fullscreen" content="yes">
-	<meta name="format-detection" content="telephone=no,email=no">
-	<link rel="shortcut icon" href="${pageContext.request.contextPath}/resource/image/****.ico" />
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/css/****.css " />
-	<script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/****.js"></script>
-	<script type="text/javascript">	
-		<!-- 页面JS写在这里 --> 			
-	</script>
-	<style type="text/css">
-		<!-- 页面CSS写在这里 -->
-	</style>
-	</head> 
-	<body> 
-		<!-- 页面结构写在这里 --> 
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,
+        maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <title>****</title> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="format-detection" content="telephone=no,email=no">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/resource/image/****.ico" />
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/css/****.css " />
+        <script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/****.js"></script>
+        <script type="text/javascript">	
+            <!-- 页面JS写在这里 --> 			
+        </script>
+        <style type="text/css">
+            <!-- 页面CSS写在这里 -->
+        </style>
+    </head> 
+    <body> 
+        <!-- 页面结构写在这里 --> 
+    </body>
 </html>
-```
-```HTML
-	<p>11</p>
 ```
 
 ## 2. 通过`vw`布局适配移动端页面
