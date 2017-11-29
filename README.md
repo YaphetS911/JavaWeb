@@ -173,12 +173,12 @@ $(".a").click(function() {
 ## 8. `jQuery`效果函数
 
 目前接触过以下几个效果函数：
-* `slideDown()`/`slideUp()`函数  
+* `slideDown()`/`slideUp()`函数  
 `slideDown()`/`slideUp()`与`show()`/`hide()`不同的是，前者是向下展开/向上收缩，而后者是向右下展开/向左上收缩。实际应用中，`slideDown()`/`slideUp()`往往更常用，其使用方法如下：
 ```JS
 $(selector).slideUp(speed,callback)
 ```
-* `animate()`函数  
+* `animate()`函数  
 `animate()`方法执行`CSS`属性集的自定义动画。该方法通过`CSS`样式将元素从一个状态改变为另一个状态。`CSS`属性值是逐渐改变的，这样就可以创建动画效果, 其使用方法如下：
 ```JS
 $(selector).animate(styles,speed,easing,callback)
