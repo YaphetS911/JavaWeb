@@ -30,7 +30,7 @@ Project exercises for javaweb
 ```HTML
 <!DOCTYPE html> 
 <html lang="ZH-CN"> 
-    <head>
+	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,
 	maximum-scale=1,minimum-scale=1,user-scalable=no">
@@ -107,7 +107,7 @@ Project exercises for javaweb
 	><span>丙</span>	
 </div>
 ```
-这样既不用将所有`<span>`写在同一行中，又去掉了换行符，效果如下图：1
+这样既不用将所有`<span>`写在同一行中，又去掉了换行符，效果如下图：
 
 ![alt](/image/4.png)
 
