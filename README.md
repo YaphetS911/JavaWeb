@@ -78,7 +78,7 @@ Project exercises for javaweb
 
 由于两行中标题宽度不一致，导致后面的内容无法对齐。为此，我们希望为标题`<span>`设定一个宽度，但前面说到，内联元素宽度随内容而定，对其设定`width`是无效的。这里就要用到`display:inline-block`这个属性了。`inline-block`是`CSS2.1`新增的值，简单来说就是使其既具有`block`的宽度高度特性又具有`inline`的同行特性。我们对标题的`CSS`做如下设定：
 ```CSS
-.title{
+.title {
     display: inline-block;
     width: 30%;
 }
@@ -122,7 +122,7 @@ Project exercises for javaweb
 * 对父元素设置`overflow`属性，可以是`overflow:auto`或是`overflow:hidden`；
 * 利用伪元素，直接在父元素的最后增加一个`clear: both`的动作：
 ```CSS
-.container::after{
+.container::after {
     content: "";
     display: block;
     clear: both;
@@ -134,8 +134,42 @@ Project exercises for javaweb
 ![alt](/image/6.png)
 
 ## 5. H5声明下height设置百分比无效
+
+当页面声明为`HTML4`时，如：
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+```
+对元素设置`height：10%`，元素高度会被设置为浏览器高度的`10%`；
+但当页面声明为`HTML5`时，如：
+```html
+<!DOCTYPE html>
+```
+对元素设置`height：10%`，元素高度会等于`0`。这是由于其父元素`height`属性值为`0`，因此需要对`html`和`body`设定`height`属性，`CSS`代码如下：
+```CSS
+body,html {
+    height: 100%;		
+}
+```
+
 ## 6. 禁止点击事件
-## 7. n个元素内\<button>点击事件
+
+当我们希望禁止某个元素与用户发生交互效果，可以对其做如下设置：
+```CSS
+.container::after {
+    pointer-events:none;
+}
+```
+
+## 7. n个元素内`<button>`点击事件
+
+假设页面上有n个`<div>`（其id分别为tab1，tab2……tabn），每个`<div>`中都包含一个`<button>`（其id分别为btn1，btn2……btnn，class为a）。当点击某个`<button>`时，希望对该`<div>`执行一些列操作（例如隐藏该`<div>`），可以对`JS`做如下设置：
+```JS
+$(".a").click(function() {
+    var n = this.id.substring(3);
+    $("#div"+n).hide();
+});
+```
+
 ## 8. jQuery效果函数
 ## 9. 取整函数
 ## 10. \<div>内部元素垂直居中
