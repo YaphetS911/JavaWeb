@@ -259,7 +259,7 @@ height: 100%;
 ```
 这样，无论页面主体部分内容有多少，底部内容将永远固定在页面底部，不会影响页面整体布局。
 
-## 12. background-size属性
+## 12. `background-size`属性
 在设置`background-image`属性时，往往需要同时设置`background-size`来确保图片完整显示。但是由于图片大小有时会因为布局的关系，出现非整数值长宽（如10.23px），此时如果`background-size`设置为`100%`或者`cover`，在部分浏览器下（如safari）会出现被截掉1px的现象，如下图：
 
 ![alt](/image/8.png)
