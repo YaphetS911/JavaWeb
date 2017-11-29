@@ -14,7 +14,7 @@ Project exercises for javaweb
 2. [通过vw布局适配移动端页面](#2-通过vw布局适配移动端页面)
 3. [正确区分块级元素和内联元素](#3-正确区分块级元素和内联元素)
 4. [float后外部容器无法撑开](#4-float后外部容器无法撑开)
-5. [H5声明下height设置百分比无效](#5-html5声明下height设置百分比无效)
+5. [HTML5声明下height设置百分比无效](#5-html5声明下height设置百分比无效)
 6. [禁止点击事件](#6-禁止点击事件)
 7. [n个元素内\<button>点击事件](#7-n个元素内button点击事件)
 8. [jQuery效果函数](#8-jquery效果函数)
