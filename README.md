@@ -8,6 +8,7 @@ Project exercises for javaweb
 |E-mail|shengchensb@gmail.com
 
 ****
+
 ## 目录
 1. [创建HTML模板](#1-创建html模板)
 2. [通过vw布局适配移动端页面](#2-通过vw布局适配移动端页面)
@@ -21,6 +22,8 @@ Project exercises for javaweb
 10. [\<div>内部元素垂直居中](#10-div内部元素垂直居中)
 11. [页面底部固定元素](#11-页面底部固定元素)
 12. [background-size属性](#12-background-size属性)
+
+****
 
 ## 1. 创建HTML模板
 
