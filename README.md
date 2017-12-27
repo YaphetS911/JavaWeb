@@ -30,28 +30,30 @@ Project exercises for javaweb
 ```HTML
 <!DOCTYPE html> 
 <html lang="ZH-CN">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,
-        maximum-scale=1,minimum-scale=1,user-scalable=no">
-        <title>****</title> 
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="apple-touch-fullscreen" content="yes">
-        <meta name="format-detection" content="telephone=no,email=no">
-        <link rel="shortcut icon" href="${pageContext.request.contextPath}/resource/image/****.ico" />
-        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/css/****.css " />
-        <script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/****.js"></script>
-        <script type="text/javascript">	
-            <!-- 页面JS写在这里 --> 			
-        </script>
-        <style type="text/css">
-            <!-- 页面CSS写在这里 -->
-        </style>
-    </head> 
-    <body> 
-        <!-- 页面结构写在这里 --> 
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,
+    maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>****</title> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/resource/image/****.ico" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/css/****.css " />
+    <script src="${pageContext.request.contextPath}/resource/js/****.js">
+    </script>
+    <script>	
+      <!-- 页面JS写在这里 --> 			
+    </script>
+    <style>
+      <!-- 页面CSS写在这里 -->
+    </style>
+  </head>
+  <body>
+    <!-- 页面结构写在这里 --> 
+  </body>
 </html>
 ```
 
@@ -79,8 +81,8 @@ Project exercises for javaweb
 由于两行中标题宽度不一致，导致后面的内容无法对齐。为此，我们希望为标题`<span>`设定一个宽度，但前面说到，内联元素宽度随内容而定，对其设定`width`是无效的。这里就要用到`display:inline-block`这个属性了。`inline-block`是`CSS2.1`新增的值，简单来说就是使其既具有`block`的宽度高度特性又具有`inline`的同行特性。我们对标题的`CSS`做如下设定：
 ```CSS
 .title {
-    display: inline-block;
-    width: 30%;
+  display: inline-block;
+  width: 30%;
 }
 ```
 这样就可以达到我们要的效果，如下图：
@@ -90,9 +92,9 @@ Project exercises for javaweb
 * 同行中，`<span>`之间会有间隙。例如：
 ```HTML
 <div>
-    <span>甲</span>
-    <span>乙</span>
-    <span>丙</span>	
+  <span>甲</span>
+  <span>乙</span>
+  <span>丙</span>	
 </div>
 ```
 此时，页面表现如下图：
@@ -102,9 +104,9 @@ Project exercises for javaweb
 可以看到，三个`<span>`之间出现了间隙，其原因是标签段之间有换行符，在浏览器加载页面时，这个换行符就会占用一个空格的空间。最简单的解决办法就是改变`HTML`结构，即：
 ```HTML
 <div>
-    <span>甲</span
-    ><span>乙</span
-    ><span>丙</span>	
+  <span>甲</span
+  ><span>乙</span
+  ><span>丙</span>	
 </div>
 ```
 这样既不用将所有`<span>`写在同一行中，又去掉了换行符，效果如下图：
@@ -123,10 +125,10 @@ Project exercises for javaweb
 * 利用伪元素，直接在父元素的最后增加一个`clear: both`的动作：
 ```CSS
 .container::after {
-    content: "";
-    display: block;
-    clear: both;
-    visibility: hidden;
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
 }
 ```
 这样就可以解决外部容器无法撑开的问题了，如下图：
@@ -147,7 +149,7 @@ Project exercises for javaweb
 对元素设置`height：10%`，元素高度会等于0。这是由于其父元素`height`属性值为0，因此需要对`html`和`body`设定`height`属性，`CSS`代码如下：
 ```CSS
 body,html {
-    height: 100%;		
+  height: 100%;		
 }
 ```
 
@@ -156,7 +158,7 @@ body,html {
 当我们希望禁止某个元素与用户发生交互效果，可以对其做如下设置：
 ```CSS
 .container::after {
-    pointer-events:none;
+  pointer-events:none;
 }
 ```
 
@@ -165,8 +167,8 @@ body,html {
 假设页面上有n个`<div>`（其id分别为tab1，tab2……tabn），每个`<div>`中都包含一个`<button>`（其id分别为btn1，btn2……btnn，class为a）。当点击某个`<button>`时，希望对该`<div>`执行一些列操作（例如隐藏该`<div>`），可以对`JS`做如下设置：
 ```JS
 $(".a").click(function() {
-    var n = this.id.substring(3);
-    $("#div"+n).hide();
+  var n = this.id.substring(3);
+  $("#div"+n).hide();
 });
 ```
 
@@ -186,7 +188,7 @@ $(selector).animate(styles,speed,easing,callback)
 一个点击`<button>`后页面滚动到指定`<div>`顶部的案例：
 ```JS
 $("#btn ").click(function() {
-    $("html, body").animate({scrollTop: $("#div").offset().top}, 300); 
+  $("html, body").animate({scrollTop: $("#div").offset().top}, 300); 
 });
 ```
 
@@ -205,7 +207,7 @@ Math.round(5.78)        //四舍五入 结果为6
 在案例中，对`<button>`点击事件做如下修改，即可去除`<div>`顶部的距离：
 ```JS
 $("#btn").click(function() {
-    $("html, body").animate({scrollTop: Math.ceil($("#div").offset().top)}, 300); 
+  $("html, body").animate({scrollTop: Math.ceil($("#div").offset().top)}, 300); 
 });
 ```
 
@@ -214,9 +216,9 @@ $("#btn").click(function() {
 当需要在一个`<div>`中，使其某个子元素水平居中，我们可以对父元素设置`text-align: center`或者对子元素设置`margin: 0 auto`（子元素要求必须有宽度，且未设置`float`属性）。但如果要使子元素垂直居中，且其高度尚未确定时，我们就需要使用`transform`这个属性了。`transform`属性向元素应用2D或3D转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。我们对内部子元素做如下设置：
 ```CSS
 .child {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);	
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);	
 }
 ```
 这样就可以使`<div>`内部的元素垂直居中，效果如下图：
@@ -229,32 +231,32 @@ $("#btn").click(function() {
 `CSS`结构：
 ```CSS
 .html, body {
-    height: 100%;
+  height: 100%;
 }
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -xpx;        //x为底部元素的高度+margin，下同
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -xpx;        //x为底部元素的高度+margin，下同
 }
 .footer {
-    height: xpx;
+  height: xpx;
 }
 .push {
-    height: xpx;	
-    pointer-events: none;
+  height: xpx;
+  pointer-events: none;
 }
 ```
 `HTML`结构：
 ```HTML
 <body>
-    <div class="wrapper">
-        <!-- 页面主体内容写在这里 --> 
-        <div class="push"></div>
-    </div>
-    <div class="footer">
-        <!-- 页面底部内容写在这里 --> 
-    </div>
+  <div class="wrapper">
+    <!-- 页面主体内容写在这里 --> 
+    <div class="push"></div>
+  </div>
+  <div class="footer">
+    <!-- 页面底部内容写在这里 --> 
+  </div>
 </body>
 ```
 这样，无论页面主体部分内容有多少，底部内容将永远固定在页面底部，不会影响页面整体布局。
